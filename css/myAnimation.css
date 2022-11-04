@@ -1,8 +1,7 @@
 nav {
-    position: fixed;
+    position: absolute;
     z-index: 10;
 }
-
 
 @keyframes comming {
     from {
