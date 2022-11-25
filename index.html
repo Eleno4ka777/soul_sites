@@ -2,237 +2,336 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Это моя первая страница...">
-    <meta name="author" content="Eva">
-    <meta name="robots" content="all">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Елена Радугина, создание сайтов. </title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+
+    <meta name="description" content="Елена Радугина фулл стек веб-разработчик и дизайнер. Создание сайтов на заказ.">
+    <meta name="Author" content="Елена Радугина">
+
+
     <meta property="og:locale" content="ru_RU">
-    <meta property="og:title" content="Это моя первая страница...">
-    <title>Елена Радугина - Веб-разработчик</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Елена Радугина. Веб-разработчик и дизайнер">
+    <meta property="og:description" content="Написание сайтов на заказ.">
+
+    <link rel="icon" sizes="32x32" href="images/fav_icon.png">
+    <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/reset.css">  
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/myAnimation.css">
 </head>
+
 <body>
     <header>
-      <nav>
+        <nav>
             <div class="container">
-            <div class="row">
-                <div class="col-xl-2 col-lg-3 col-9">
-                <div class="logo">Елена Радугина</div>
+                <div class="row ">
+                    <div class="col-xl-2 col-lg-3 col-9">
+                        <div class="logo" id="logo"><a href="#">Елена Радугина</a></div>
+                    </div>
+                    
+                    <div class="menu px-0 offset-xl-4 offset-lg-1 col-xl-6 col-lg-8 d-none d-lg-block">
+                        <ul>
+                            <li><a href="#about_me">Обо мне</a></li>
+                            <li><a href="#what_i_can_do">Услуги</a></li>
+                            <li><a href="#cases">Кейсы</a></li>
+                            <li><a href="#calculation">Прайс</a></li>
+                            <li><a href="#reviews">Отзывы</a></li>
+                            <li><a href="#contacts">Контакты</a></li>                            
+                        </ul>
+                    </div>
+
+                    <div class="col-3 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                        <div class="dropdown">
+                            <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"></a>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#about_me">Обо мне</a></li>
+                                <li><a class="dropdown-item" href="#what_i_can_do">Услуги</a></li>
+                                <li><a class="dropdown-item" href="#cases">Кейсы</a></li>
+                                <li><a class="dropdown-item" href="#calculation">Прайс</a></li>
+                                <li><a class="dropdown-item" href="#reviews">Отзывы</a></li>
+                                <li><a class="dropdown-item" href="#contacts">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="menu px-0 offset-xl-4 offset-lg-1 col-xl-6 col-lg-8 d-none d-lg-block">
-                     <div class="menu">
-                <ul>
-                    <li><a href="#">Обо мне</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Кейсы</a></li>
-                    <li><a href="#">Прайс</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li class="kont"><a href="#">Контакты</a></li>
-                </ul>
-              </div>
             </div>
-            </div> 
-          </div>
         </nav>
-       </header>
-    <div class="main">
-        <div class="title__container">
-            <h1>Привет <br> Я Елена Радугина</h1>
-            <h4>Фулл стек веб-разработчик</h4>
-            <input type="submit" value="Обо мне">
-            <input type="submit" value="Мои работы">
+    </header>
+    
+    <main>
+
+    
+    <!--MAIN-->    
+        <div class="main">
+            <div class="container h-100">
+                <div class="row align-items-center h-100">
+                    <div class="col-lg-7">
+                        <div class="title__container">
+                            <h1>Привет<br> Я Елена Радугина</h1>
+                            <h4>Фулл стек веб-разработчик</h4>
+
+                            <input type="button" value="Написать мне" id="Write_to_me">
+                            <input type="button" value="Мои работы" id="my_img">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="about_me">
-       <div class="about_me_container">
-            <h2>Обо мне</h2>
-            <hr>
-            <img src="img/myphoto.png" alt="">
-            <p class="firstText">  “Благодаря искусству мир духовный и мир реальный 
-    способны сосуществовать”</p>
-            <p class="secondText">ВLorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum blanditiis, debitis a ipsa fugit ad architecto adipisci obcaecati. Quos magnam, hic vero omnis numquam tempore laborum, similique tempora consequatur debitis a iure eaque. Vel cupiditate, maxime! Nemo adipisci quia velit.</p>
-            <a href="#">Скачать резюме</a>
+    
+
+
+
+    <!--ABOUT ME-->
+        <div class="about_me" id="about_me">
+            <div class="container py-5 my-5 text-center">
+                
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <h2>ОБО МНЕ</h2>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="row justify-content-around">                    
+                    
+
+                    <div class="d-block w-100">
+                        <div class="smileText Text">
+                            <img src="images/myphoto.png" alt class="mb-3">
+                            <p><br>Привет!
+Меня зовут Елена, я начинающий HTML-верстальщик и Front-end разработчик.<br> Так же могу разработать дизайн сайта. Навыки работы в Photoshop / Figma / Tilda.<br> Данное направление мне интересно, и я хотела бы развиваться в нем дальше. 
+</p>
+                       
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="skills">
-        <div class="skills_container">
-            <h2>Что я умею</h2>
-            <hr>
-            <div class="skills_item">
-                <img src="img/pc.png" alt="">
-                <h3>Веб-дизайн</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, vel.</p>
+
+        
+    <!--WHAT I CAN DO-->
+        <div class="what_i_can_do" id="what_i_can_do">
+            <div class="container py-5 d-flex flex-column align-items-center">
+                <h2>ЧТО Я УМЕЮ</h2>
+                <div class="line"></div>
+                
+                <div class="row py-5 my-5 justify-content-around text-center">
+                    <div id="nout" class="col-12 col-lg-3 py-4 py-lg-0">
+                        <h4>Веб-дизайн</h4>
+                       <p>Разработка дизайна сайтов,<br>социальных сетей, баннеров, визиток,<br>буклетов и многое др.</p>
+                    </div>
+                    <div id="znak" class="col-12 col-lg-3 py-4 py-lg-0">
+                        <h4>Разработка</h4>
+                        <p>Вёрстка сайтов<br> с помощью кода <br>и на платформе Tilda</p>
+                    </div>
+                    <div id="raketa" class="col-12 col-lg-3 py-4 py-lg-0">
+                        <h4>СЕО-Оптимизация</h4>
+                        <p>Развитие и продвижение сайта <br>для его выхода на первые позиции <br>в результатах поиска</p>
+                    </div>
+                    <div id="oralo" class="col-12 col-lg-3 pt-4 py-lg-0">
+                        <h4>Маркетинг</h4>
+                        <p>Привличение лояльной целевой<br> аудитории для вашего бизнеса</p>
+                    </div>
+                </div>
             </div>
-            <div class="skills_item">
-                <img src="img/log.png" alt="">
-                <h3>Разработка</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, vel.</p>
-            </div>
-            <div class="skills_item">
-                <img src="img/log2.png" alt="">
-                <h3>СЕО оптимизация</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, vel.</p>
-            </div>
-            <div class="skills_item">
-                <img src="img/log3.png" alt="">
-                <h3>Маркетинг</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, vel.</p>
-            </div>
-            <div class="clear"></div>
         </div>
-    </div>
-    <div class="portfolio">
+
+
+    <!--CASES-->
+       <div class="portfolio py-5 d-flex flex-column align-items-center" id="cases">
         <div class="portfolio_container">
             <h2>Кейсы</h2>
             <hr>
-            <p class="portfolio_subscription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ea cum error commodi at obcaecati consequuntur in pariatur!</p>
-            <img src="img/photo.png" alt="">
-            <div class="description_left">
-                <h3>Client:</h3>
+            
+            <a href="http://kotopesik74.tilda.ws"><img src="images/photo.png" class="d-block w-100"></a>
+                <h3>Клиент:</h3>
                 <p>Приют для животных "Котопёс"</p>
-                <h3>Website:</h3>
-                <p>https://kotopes.ru</p>
-                <a href="http://kotopesik74.tilda.ws" target="_blank">Смотреть</a>
+                <h3>Сайт:</h3>
+                <p>https://kotopesik74.tilda.ws</p>
+                <a href="http://kotopesik74.tilda.ws" target="blank">Смотреть</a>
             </div>
             <div class="description_right">
-                <h4>Название проекта</h4>
+                <h4>Сайт-визитка для приюта "Котопёс"</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum blanditiis, debitis a ipsa fugit ad architecto adipisci obcaecati. Quos magnam, hic vero omnis numquam tempore laborum, similique tempora consequatur debitis a iure eaque. Vel cupiditate, maxime! Nemo adipisci quia velit.</p>
             </div>
             <div class="clear"></div>
         </div>
-    </div>
-    <div class="calculator">
-        <div class="calculator_container">
-            <h2>Расчет стоимости</h2>
-            <div class="calculator_inner">
-                <h3>Тип Сайта</h3>
-                <select class="mySelect" name="type" id="typeSite">
-                    <option value="1" selected disabled>Выберите пункт</option>
-                    <option value="2">Сайт-визитка</option>
-                    <option value="3">Корпоративный сайт</option>
-                    <option value="4">Интернет-магазин</option>
-                </select>
-                <h3>Дизайн</h3>
-                <select class="mySelect" name="type" id="typeSite">
-                    <option value="1" selected disabled>Выберите пункт</option>
-                    <option value="2">Шаблонный</option>
-                    <option value="3">Уникальный</option>
-                    <option value="4">WOW-Дизайн</option>
-                </select>
-                <h3>Адаптивность</h3>
-                <select class="mySelect" name="type" id="typeSite">
-                    <option value="1" selected disabled>Выберите пункт</option>
-                    <option value="2">Только ПК</option>
-                    <option value="3">Только мобильный сайт</option>
-                    <option value="4">ПК + Мобильный</option>
-                </select>
-                <hr>
-                <div class="calculator_footer">
-                    <div class="days">
-                        <p class="text">Сроки</p>
-                        <p class="digit">0</p>
-                        <div class="clear"></div>
-                    </div>
-                    
-                     <div class="price">
-                        <p class="text">Стоимость</p>
-                        <p class="digit">0</p>
-                        <div class="clear"></div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="statistic">
-        <div class="statistic_container">
-            <h2>Немного статистики</h2>
-            <hr>
-            <div class="statistic_item margin-right">
-                <img src="img/logo1.png" alt="">
-                <h3>120</h3>
-                <p>Счастливых клиентов</p>
-            </div>
-            <div class="statistic_item margin-right">
-                <img src="img/logo2.png" alt="">
-                <h3>4600</h3>
-                <p>Часов работы</p>
-            </div>
-            <div class="statistic_item margin-right">
-                <img src="img/logo3.png" alt="">
-                <h3>340</h3>
-                <p>Проектов завершено</p>
-            </div>
-            <div class="statistic_item fourth">
-                <img src="img/logo4.png" alt="">
-                <h3>23</h3>
-                <p>Наград получено</p>
-            </div>
-        </div>
-    </div>
-    <div class="reviews">
-        <div class="reviews_container">
-            <h2>Отзывы</h2>
-            <hr>
-            <div class="review">
-                <img src="img/mihail.png" alt="">
-                <p class="review_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam cum totam saepe laborum quae tenetur blanditiis laboriosam asperiores repellat quas!</p>
-                <p class="review_author"> <span>Александра</span>, АНО "Жить дальше"</p>
-            </div>
-        </div>
-    </div>
-    <div class="contacts">
-        <div class="contacts_container">
-            <h2>Мои Контакты</h2>
-            <hr>
-            <p class="contacts_subscription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ea cum error commodi at obcaecati!</p>
-            <div class="contacts_data">
-                <div class="contacts_data_item">
-                    <img src="img/geo.png" alt="">
-                    <p>Челябинск, ЖК Александровский</p>
-                </div>
-                <div class="contacts_data_item">
-                    <img src="img/mail.png" alt="">
-                    <p>my@po4ta.com</p>
-                </div>
-                <div class="contacts_data_item">
-                    <img src="img/tel.png" alt="">
-                    <p>+7 777-777-77-77</p>
-                </div>
-            </div>
-            <div class="clear"></div>
-            <h3>Оставьте мне сообщение</h3>
-            <form action="#">
-                <div class="contacts_inputs">
-                    <input type="text" placeholder="Имя">
-                    <input class="secondInput" type="text" placeholder="Email">
-                    <div class="clear"></div>
-                </div>
-                <textarea placeholder="Сообщение" name="message" id="messageText" cols="30" rows="10"></textarea>
-                <input type="submit" value="Отправить">
-            </form>
-            <div class="contacts_social">
-                <a href="#"><img src="img/fb.png" alt=""></a>
-                <a href="#"><img src="img/tvit.png" alt=""></a>
-                <a href="#"><img src="img/bool.png" alt=""></a>
-                <a href="#"><img src="img/kat.png" alt=""></a>
-                <a href="#"><img src="img/inst.png" alt=""></a>
-                <a href="#"><img src="img/in.png" alt=""></a>
-                <div class="clear"></div>
-            </div>
-        </div>
-    </div>
-    <div class="map">
-        <img src="img/map.png" alt="">
-    </div>
-    <div class="footer">
-        <div class="footer_container">
-            <p>Copyright 2022 Elena Radugina. Design by Web</p>
-        </div>
-    </div>
     
+
+
+    <!--COST CALCULATION-->
+        <div class="cost_calculation py-5 mb-5" id="calculation">
+            <div class="container py-5 col-10 d-flex flex-column ">  
+                <h2>РАСЧЕТ СТОИМОСТИ</h2>            
+
+                <h3>ТИП САЙТА</h3>
+                <select name="site_type" id="site_type">
+                    <option valCost="?" valTime="?" selected>Выберите из списка...</option>
+                    <option valCost="2000" valDay="1">Сайт-визитка</option>
+                    <option valCost="6000" valDay="2">Корпоративный</option>
+                    <option valCost="3000" valDay="2">Личный</option>                    
+                </select>
+
+                <h3>ДИЗАЙН</h3>
+                <select name="design" id="design">
+                    <option valCost="?" valK1="?" selected>Выберите из списка...</option>
+                    <option valCost="2500" valK1="5">Супер-кастомный дизайн</option>
+                    <option valCost="2000" valK1="4">Кастомный дизайн</option>
+                    <option valCost="1300" valK1="3">Стандарт</option>
+                    <option valCost="200" valK1="1">Минимализм</option>
+                </select>
+
+                <h3>АДАПТИВНОСТЬ</h3>
+                <select name="Adaptability" id="Adaptability">
+                    <option valCost="?" valK2="?" selected>Выберите из списка...</option>
+                    <option valCost="1300" valK2="5">Адаптивен под любые устройства</option>
+                    <option valCost="600" valK2="4">Будет хорошо выглядеть на любом компьютере</option>
+                    <option valCost="100" valK2="1">Ориентир на конкретные параметры</option>
+                </select>
+
+                <div class="calculation">
+                    <div class="row">
+                        <div class="col-6"><p>Сроки</p></div>
+                        <div class="col-6" id="dateItog">0</div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-6"><p>Стоимость</p></div>
+                        <div class="col-6" id="sumItog">0</div>
+                    </div>
+                </div>
+                
+                <!--<input type="button" value="Оставить заявку">-->
+            </div> 
+        </div>
+       
+
+    <!--SOME STATISTICS-->
+        <div class="parallax" id="stats">
+
+            <div class="container py-5 d-flex flex-column align-items-center">
+                <h2>НЕМНОГО СТАТИСТИКИ</h2>
+                <div class="line"></div>
+
+                <div class="row w-100 py-5 my-5 justify-content-around text-center">
+                    <div id="smile" class="col-12 col-lg-3 py-4 py-lg-0">
+                        <h3>120</h3>
+                        <p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
+                    </div>
+
+                    <div id="orange_znak" class="col-12 col-lg-3 py-4 py-lg-0">
+                        <h3>3200</h3>
+                        <p>ЧАСОВ РАБОТЫ</p>
+                    </div>
+
+                    <div id="galochka" class="col-12 col-lg-3 py-4 py-lg-0">
+                       <h3>70</h3>
+                        <p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
+                    </div>
+
+                    <div id="kubok" class="col-12 col-lg-3 pt-4 py-lg-0">
+                        <h3>17</h3>
+                        <p>НАГРАД ПОЛУЧЕНО</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    <!--REVIEWS-->
+        <div class="reviews" id="reviews">
+            <div class="container py-5 mt-5 d-flex flex-column align-items-center text-center">
+                <h2>ОТЗЫВЫ</h2>
+                <div class="line"></div>
+            
+        
+
+
+            <div id="carouselExampleIndicatorsReviews" class="carousel slide text-center" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicatorsReviews" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicatorsReviews" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicatorsReviews" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="images/Sanya.jpg" class="d-block my-4" alt="...">
+                  <div class="row justify-content-center"><div class="col-7">
+                    <p>Сотрудничать с Леночкой одно удовольствие! Работа всегда выполнена в срок, отличное чувствование клиента, по дизайну всегда попадает в самую точку. </p></div>
+                  </div>         
+                  <p class="mb-5 pb-4"><b>Александра, </b>Директор АНО “Жить дальше”</p>
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                  <img src="images/yana.jpg" class="d-block my-4 " alt="...">
+                  <div class="row justify-content-center"><div class="col-7">
+                    <p>Спасибо огромное за работу! Сайт получился светлый, красочный, выполняющий требуемые функции. Работа выполнена раньше срока.</p></div>
+                  </div>
+                  <p class="mb-5 pb-4"><b>Яна, </b>Помощник приюта "Котопёс" </p>
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                  <img src="images/serj.jpg" class="d-block my-4" alt="...">
+                  <div class="row justify-content-center"><div class="col-7">
+                    <p>Работаю с Еленой очень давно, прошли вместе много проектов. Быстро схватывает задачу и реализует самыми неординарными способами. </p></div> 
+                  </div>
+                  <p class="mb-5 pb-4"><b>Сергей, </b>Директор и кинезиолог OOO "Kinesio-life"</p>
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsReviews" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true">Назад</span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsReviews" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"> Вперед</span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            </div>
+        </div>
+
+
+    <!--CONTACTS-->
+        <div class="contacts" id="contacts">
+            <div class="container py-5 d-flex flex-column align-items-center">
+                <h2>МОИ КОНТАКТЫ</h2>
+                <div class="line"></div>
+
+                <div class="row py-4 w-100 justify-content-around text-center">
+                    <div class="col-2"></div>
+                    <div id="Geo" class="col-12 col-lg-2 py-4 py-lg-0">
+                        <p>Челябинск<br> ЖК Александровский</p>
+                    </div>
+
+                    <div id="konvert" class="col-12 col-lg-3 py-4 py-lg-0">
+                        <a id="companyname" href="mailto:yvarov.vs@mail.ru">mail@mail.ru</a>
+                    </div>
+
+                    <div id="Tel" class="col-12 col-lg-2 py-4 py-lg-0">
+                        <a href="tel:+79043021242">+7(777)777-7777</a>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+
+                <h4>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h4>
+
+                <form enctype="multipart/form-data" method="post" onsubmit="send(event, 'send.php')">
+                    <div class="row mb-3">
+                        <div class="col-12 col-lg-4 mb-3"><input class="modal_input  always" type="text" required name="user_name" placeholder="Имя"></div>
+                        <div class="col-12 col-lg-4 mb-3"><input class="modal_input  always" type="email" required name="user_email" placeholder="Email"></div>
+                        <div class="col-12 col-lg-4 mb-3"><input class="modal_input  always" type="tel" required name="user_tel" placeholder="+7(777)777-7777"></div>                        
+                    </div>
+                    <textarea class=" col-12 modal_input" name="user_massage" id="massage" placeholder="Сообщение"></textarea>                    
+                    <input type="submit" id="Send" value="Отправить">
+                </form>
+            </div>
+        </div>
+    <footer>
+        <h6>2022 Елена Радугина ©</h6>
+    </footer>   
 </body>
 </html>
